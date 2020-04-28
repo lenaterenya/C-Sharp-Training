@@ -1,0 +1,7 @@
+C:\Users\Lena\source\repos\HW7\bin\Debug\HW6.exe.config
+C:\Users\Lena\source\repos\HW7\bin\Debug\HW6.exe
+C:\Users\Lena\source\repos\HW7\bin\Debug\HW6.pdb
+C:\Users\Lena\source\repos\HW7\obj\Debug\HW7.csprojAssemblyReference.cache
+C:\Users\Lena\source\repos\HW7\obj\Debug\HW7.csproj.CoreCompileInputs.cache
+C:\Users\Lena\source\repos\HW7\obj\Debug\HW6.exe
+C:\Users\Lena\source\repos\HW7\obj\Debug\HW6.pdb
