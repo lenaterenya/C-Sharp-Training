@@ -1,12 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HW6
+
+namespace HW7
 {
-    class DEVs
+    class Devs: Employee
     {
+        public string Language { get; set; }
+        public Devs (string firstNameValue, string lastNameValue, int passportValue, string language) : base(firstNameValue, lastNameValue, passportValue)
+
+        {
+            Language = language;
+
+        }
+
+        public override string GetFullInfo()
+
+        {
+
+            return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + " " + "Language: " + Language + '\n';
+
+        }
+
     }
 }

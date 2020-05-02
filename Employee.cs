@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HW8
+namespace HW7
 {
     class Employee
     {
@@ -19,7 +19,7 @@ namespace HW8
             Passport = passportValue;
         }
 
-        public string GetFullInfo()
+        public virtual string GetFullInfo()
         {
             return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + '\n';        
         }

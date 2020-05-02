@@ -1,12 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace HW6
+
+namespace HW7
 {
-    class QAs
+    class QAs: Employee
     {
+
+        public string Area { get; set; }
+        public QAs (string firstNameValue, string lastNameValue, int passportValue, string area): base (firstNameValue, lastNameValue, passportValue)
+
+        {
+            Area = area;
+
+        }
+           public override string GetFullInfo()
+
+        {
+
+            return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + " " + "Area: " + Area + '\n';
+
+        }
+
     }
 }

@@ -6,6 +6,8 @@ namespace HW7
         public string CompanyName { get; private set; }
         public Employee[] CompanyEmployees { get; private set; }
         public Office[] Offices { get; set; }
+        
+
 
         public Company(string companyNameValue, Employee[] employeeValues, Office[] offices)
         {
