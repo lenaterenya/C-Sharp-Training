@@ -1,26 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace HW7
 {
     class Company
     {
         public string CompanyName { get; private set; }
-        public Employee[] CompanyEmployees { get; private set; }
-        public Office[] Offices { get; set; }
+        public List<Employee> CompanyEmployees { get; private set; }
+        public List<Office> Offices { get; set; }
         
 
 
-        public Company(string companyNameValue, Employee[] employeeValues, Office[] offices)
+        public Company(string companyNameValue, List<Employee> employeeValues, List<Office> offices)
         {
             CompanyName = companyNameValue;
-            CompanyEmployees = employeeValues;
-            Offices = offices;
+            CompanyEmployees = new List<Employee>();
+            Offices = new List <Office>();
         }
         
-        public string GetCompanyFullInfo()
+      public string GetCompanyFullInfo()
         {
-            string companyFullInfo = CompanyName + '\n';
+            string companyFullInfo = CompanyName + '\n'; 
             int officeSpare = 0;
-            int roomSpare = 0;
+            int roomSpare = 0; 
             
             foreach (Employee employee in CompanyEmployees)
             {
@@ -35,7 +37,7 @@ namespace HW7
                 officeSpare = officeSpare + roomSpare;
                 companyFullInfo = companyFullInfo + office.GetFullOfficeInfo();
 
-            }
+            } 
 
             return companyFullInfo + officeSpare;
             

@@ -21,5 +21,8 @@ namespace HW7
 
         }
 
+       public override void Work()
+        {
+        } 
     }
 }
