@@ -14,8 +14,8 @@ namespace HW7
         public Company(string companyNameValue, List<Employee> employeeValues, List<Office> offices)
         {
             CompanyName = companyNameValue;
-            CompanyEmployees = new List<Employee>();
-            Offices = new List <Office>();
+            CompanyEmployees = new List<Employee>(employeeValues);
+            Offices = new List <Office>(offices);
         }
         
       public string GetCompanyFullInfo()
