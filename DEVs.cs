@@ -20,8 +20,8 @@ namespace HW7
             return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + " " + "Language: " + Language + '\n';
 
         }
-        public override void Work()
+       /* public override void Work()
         {
-        } 
+        } */
     }
 }

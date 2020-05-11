@@ -24,7 +24,7 @@ namespace HW7
             return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + '\n';        
         }
 
-        public abstract void Work();
+     // public abstract void Work();
 
     }
 }
