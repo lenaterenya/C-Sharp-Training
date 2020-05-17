@@ -25,6 +25,19 @@ namespace HW7
             employeeValues.Add(new QAs("Sam", "Johnes", 967565, "Mobile"));
             employeeValues.Add(new QAs("Jane", "Houston", 547342, "Desktop"));
 
+            employeeValues.Add(new QAAutomationLead("Sam", "Ows", 598742, "Tulips"));
+            employeeValues.Add(new QAAutomationLead("Andy", "Sworles", 765342, "Monkeys"));
+            employeeValues.Add(new QAAutomationLead("Jessica", "Moony", 547844, "Autos"));
+
+            employeeValues.Add(new QAAutomationEmployee("Nick", "Lack", 675657, "full"));
+            employeeValues.Add(new QAAutomationEmployee("Karry", "Stevens", 549787, "full"));
+            employeeValues.Add(new QAAutomationEmployee("Steven", "Krins", 778844, "half"));
+
+
+
+
+
+
             employeeValues.Add(new Devs("Mike", "Simpson", 456345, "C##"));
             employeeValues.Add(new Devs("Kate", "Norson", 786976, "C++"));
             employeeValues.Add(new Devs("Andrew", "Kidneys", 548565, "Java"));

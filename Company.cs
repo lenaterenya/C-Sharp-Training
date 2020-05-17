@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW6;
+using System;
 using System.Collections.Generic;
 
 namespace HW7
@@ -42,7 +43,61 @@ namespace HW7
             return companyFullInfo + officeSpare;
             
         }
+        
+        public void AssignFullTask (string task)
+        {
+            foreach (var employee in CompanyEmployees)
+            {
+                if (employee is IManager)
+                {
+                    (employee as IManager).AssignTask(task);
+                    return;
 
+                }
+            }
 
+        }
+
+        public void TestFullTask(string task)
+        {
+            foreach (var employee in CompanyEmployees)
+            {
+                if (employee is ITester)
+                {
+                    (employee as ITester).TestTask(task);
+                    return;
+
+                }
+            }
+
+        }
+
+        public void FullCodeCreate(string code)
+        {
+            foreach (var employee in CompanyEmployees)
+            {
+                if (employee is IDeveloper)
+                {
+                    (employee as IDeveloper).CodeCreate(code);
+                    return;
+
+                }
+            }
+
+        }
+
+        public void AssignTheTask(string task)
+        {
+            foreach (var employee in CompanyEmployees)
+            {
+                if (employee is ITaskAssigner)
+                {
+                    (employee as ITaskAssigner).AssignTask(task);
+                    return;
+
+                }
+            }
+
+        }
     }
 }

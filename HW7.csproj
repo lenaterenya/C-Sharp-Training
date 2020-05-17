@@ -48,9 +48,15 @@
     <Compile Include="DevOPs.cs" />
     <Compile Include="DEVs.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="IDeveloper.cs" />
+    <Compile Include="IManager.cs" />
+    <Compile Include="ITaskAssigner.cs" />
+    <Compile Include="ITester.cs" />
     <Compile Include="Office.cs" />
     <Compile Include="EntryPoint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QAAutomationEmployee.cs" />
+    <Compile Include="QAAutomationLead.cs" />
     <Compile Include="QAs.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
 
 namespace HW7
 {
-    class QAs : Employee
+    class QAs : Employee, ITester
     {
 
         public string Area { get; set; }
@@ -20,8 +20,13 @@ namespace HW7
             return FirstName + " " + LastName + ", " + "Passport Number: " + Passport.ToString() + " " + "Area: " + Area + '\n';
 
         }
-    /*   public override void Work()
-        { 
-        } */
+
+        public void TestTask(string task)
+        {
+            throw new NotImplementedException();
+        }
+        /*   public override void Work()
+   { 
+   } */
     }
 }
