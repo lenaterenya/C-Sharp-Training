@@ -23,7 +23,8 @@ namespace HW7
 
         public void TestTask(string task)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(FirstName + " " + LastName + " can test task \"" + task + "\"");
+
         }
         /*   public override void Work()
    { 

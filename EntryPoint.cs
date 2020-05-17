@@ -33,11 +33,6 @@ namespace HW7
             employeeValues.Add(new QAAutomationEmployee("Karry", "Stevens", 549787, "full"));
             employeeValues.Add(new QAAutomationEmployee("Steven", "Krins", 778844, "half"));
 
-
-
-
-
-
             employeeValues.Add(new Devs("Mike", "Simpson", 456345, "C##"));
             employeeValues.Add(new Devs("Kate", "Norson", 786976, "C++"));
             employeeValues.Add(new Devs("Andrew", "Kidneys", 548565, "Java"));
@@ -69,6 +64,11 @@ namespace HW7
 
 
             Company company = new Company("Microsoft", employeeValues, offices);
+
+            company.TestFullTask("TestTask");
+            company.AssignTheTask("Test Execution");
+            company.FullCodeCreate("C#");
+
 
             Console.WriteLine(company.GetCompanyFullInfo());
             

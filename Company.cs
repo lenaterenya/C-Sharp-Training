@@ -44,15 +44,14 @@ namespace HW7
             
         }
         
-        public void AssignFullTask (string task)
+        public void AssignFullTask(string task)
         {
             foreach (var employee in CompanyEmployees)
             {
                 if (employee is IManager)
                 {
                     (employee as IManager).AssignTask(task);
-                    return;
-
+                    
                 }
             }
 
@@ -65,8 +64,7 @@ namespace HW7
                 if (employee is ITester)
                 {
                     (employee as ITester).TestTask(task);
-                    return;
-
+                    
                 }
             }
 
@@ -79,8 +77,7 @@ namespace HW7
                 if (employee is IDeveloper)
                 {
                     (employee as IDeveloper).CodeCreate(code);
-                    return;
-
+                    
                 }
             }
 
@@ -93,8 +90,7 @@ namespace HW7
                 if (employee is ITaskAssigner)
                 {
                     (employee as ITaskAssigner).AssignTask(task);
-                    return;
-
+                    
                 }
             }
 

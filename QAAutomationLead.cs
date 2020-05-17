@@ -27,17 +27,17 @@ namespace HW7
 
         public void TestTask(string task)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(FirstName + " " + LastName + " can test task \"" + task + "\"");
         }
 
         public void CodeCreate(string code)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(FirstName + " " + LastName + " can code create \"" + code + "\"");
         }
 
         public void AssignTask(string task)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(FirstName + " " + LastName + " can assign task \"" + task + "\"");
         }
     }
 }
