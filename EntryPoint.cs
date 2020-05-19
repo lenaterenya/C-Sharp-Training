@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HW6;
+using System;
 using System.Collections.Generic;
 
 namespace HW7
@@ -69,6 +70,9 @@ namespace HW7
             company.AssignTheTask("Test Execution");
             company.FullCodeCreate("C#");
 
+            company.CompanyEmployees.Sort(new FirstNameEmployeeComparer());
+            company.CompanyEmployees.Sort(new LastNameEmployeeComparer());
+            company.CompanyEmployees.Sort(new PassportEmployeeComparer());
 
             Console.WriteLine(company.GetCompanyFullInfo());
             
