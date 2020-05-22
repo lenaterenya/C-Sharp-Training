@@ -2,8 +2,6 @@
 {
     class Office
     {
-        internal object roomSpare;
-
         public string Address { get; private set; }
         public int Length { get; private set; }
         public int Width { get; private set; }

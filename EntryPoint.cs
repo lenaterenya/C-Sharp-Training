@@ -73,6 +73,7 @@ namespace HW7
             company.CompanyEmployees.Sort(new FirstNameEmployeeComparer());
             company.CompanyEmployees.Sort(new LastNameEmployeeComparer());
             company.CompanyEmployees.Sort(new PassportEmployeeComparer());
+            company.Offices.Sort(new RoomSpareOfficeComparer()); 
 
             Console.WriteLine(company.GetCompanyFullInfo());
             

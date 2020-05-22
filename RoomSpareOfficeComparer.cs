@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace HW7
 {
-    class RoomSpareOfficeComparer
+    class RoomSpareOfficeComparer : IComparer<Office>
     {
+        public int Compare(Office x, Office y)
+        {
+            return (x.Length * x.Width)-(y.Length * y.Width);
+        }
     }
 }
