@@ -1,4 +1,4 @@
-﻿using HW6;
+﻿using HW7;
 using System;
 using System.Collections.Generic;
 
@@ -35,18 +35,18 @@ namespace HW7
             employeeValues.Add(new QAAutomationEmployee("Steven", "Krins", 778844, "half"));
 
             employeeValues.Add(new Devs("Mike", "Simpson", 456345, "C##"));
-            employeeValues.Add(new Devs("Kate", "Norson", 786976, "C++"));
+            employeeValues.Add(new Devs("Kate", "Norson", 386976, "C++"));
             employeeValues.Add(new Devs("Andrew", "Kidneys", 548565, "Java"));
             employeeValues.Add(new Devs("Sam", "Krew", 567442, "JS"));
 
             employeeValues.Add(new BAs("Anthony", "White", 657455, "STAR"));
             employeeValues.Add(new BAs("Mike", "Nolton", 789786, "WiseMan"));
             employeeValues.Add(new BAs("Chris", "Suners", 987867, "Greys"));
-            employeeValues.Add(new BAs("Kate", "Snows", 598742, "Johnsons"));
+            employeeValues.Add(new BAs("Kate", "Snows", 398742, "Johnsons"));
 
             employeeValues.Add(new DevOPs("Andy", "Dick", 659955, "Linux Ubuntu"));
-            employeeValues.Add(new DevOPs("Norah", "Drake", 778686, "Linux Debian"));
-            employeeValues.Add(new DevOPs("Summer", "Brights", 876867, "Windows 10"));
+            employeeValues.Add(new DevOPs("Norah", "Drake", 378686, "Linux Debian"));
+            employeeValues.Add(new DevOPs("Summer", "Brights", 376867, "Windows 10"));
             employeeValues.Add(new DevOPs("Tim", "Dreyns", 587642, "Linux Fedora"));
 
 
@@ -76,8 +76,8 @@ namespace HW7
             company.Offices.Sort(new RoomSpareOfficeComparer()); 
 
             Console.WriteLine(company.GetCompanyFullInfo());
-            
-          
+
+            company.GetEmployeePassportStatistics();
         }
     
      }
