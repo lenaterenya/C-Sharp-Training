@@ -1,6 +1,7 @@
 ﻿using HW7;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace HW7
 {
@@ -78,6 +79,29 @@ namespace HW7
             Console.WriteLine(company.GetCompanyFullInfo());
 
             company.GetEmployeePassportStatistics();
+
+            var employeeList = company.CompanyEmployees.Where(e => (e is ITaskAssigner))
+                                                       .Select(z => (z.LastName))
+                                                       .OrderBy(x => x)
+                                                       .ToList();
+                                                          
+            foreach (var employee in employeeList)
+
+            {
+             Console.WriteLine (employee);
+            }
+
+            var employeeList2 = company.CompanyEmployees.Where(a => (a.Passport.ToString().Substring(0, 1) == "4"))
+                                                        .Select(b => (b.FirstName + " " + b.LastName + " " + b.Passport.ToString())); 
+                                                         
+
+            foreach (var employee in employeeList2)
+
+            {
+             Console.WriteLine (employee);
+            }
+
+                
         }
     
      }
